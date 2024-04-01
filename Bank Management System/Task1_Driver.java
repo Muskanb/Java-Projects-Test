@@ -10,9 +10,8 @@ class Account implements Serializable
 	String gender;
 	String password;
 	String UserName;
-	Date dateOfBirth;
-	String cEmail
-	String phone
+
+	
 	Account()
 	{
 		name = null;
