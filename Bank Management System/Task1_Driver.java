@@ -7,6 +7,9 @@ class Account implements Serializable
 	int account_number;
 	String pin;
 	double Amount;
+	String gender;
+	String password;
+	String UserName;
 
 	Account()
 	{
