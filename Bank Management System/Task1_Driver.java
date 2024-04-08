@@ -4,7 +4,6 @@ import java.io.*;
 class Account implements Serializable
 {
 	String name;
-	int account_number;
 	String pin;
 	double Amount;
 	String gender;
@@ -15,7 +14,6 @@ class Account implements Serializable
 	Account()
 	{
 		name = null;
-		account_number = 0;
 		pin = null;
 		Amount = 0;	
 	}
@@ -23,7 +21,6 @@ class Account implements Serializable
 	Account(String n, int acc, String pi, double amount)
 	{
 		name = n;
-		account_number = acc;
 		pin = pi;
 		Amount = 1000 + amount;	
 	}
@@ -31,11 +28,6 @@ class Account implements Serializable
 	public void setName(String n)
 	{
 		name = n;
-	}
-
-	public void setAccountNumber(int n)
-	{
-		account_number = n;
 	}
 
 	public void setPIN(String p)
@@ -51,11 +43,6 @@ class Account implements Serializable
 	public String getName()
 	{
 		return name;
-	}
-
-	public int getAccountNumber()
-	{
-		return account_number;
 	}
 
 	public String getPIN()
