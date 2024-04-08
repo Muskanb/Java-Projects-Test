@@ -5,6 +5,7 @@ class Account implements Serializable
 {
 	String name;
 	String pin;
+	int account_number;
 	double Amount;
 	String gender;
 	String password;
@@ -14,12 +15,14 @@ class Account implements Serializable
 	Account()
 	{
 		name = null;
+		account_number = 0;
 		pin = null;
 		Amount = 0;	
 	}
 	
 	Account(String n, int acc, String pi, double amount)
 	{
+		account_number = acc;
 		name = n;
 		pin = pi;
 		Amount = 1000 + amount;	
@@ -53,6 +56,16 @@ class Account implements Serializable
 	public double getAmount()
 	{
 		return Amount;
+	}
+
+	public void setAccountNumber(int n)
+	{
+		account_number = n;
+	}
+
+	public int getAccountNumber()
+	{
+		return account_number;
 	}
 
 }
